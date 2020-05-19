@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    background: red;
+    color: white;
+}
+
+.image-main {
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.bold-item {
+    font-weight: bold;
+}
+
+.italic-item {
+    font-style: italic;
+}
+
+.div-center {
+    text-align: center;
+}
+.images img{
+    border: dotted;
+    width: 7%;
+}
+
+footer div.copyright {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
