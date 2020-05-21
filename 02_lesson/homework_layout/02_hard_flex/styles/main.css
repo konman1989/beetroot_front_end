@@ -39,7 +39,7 @@ nav.header-nav a {
     margin: 10px;
 }
 
-div.nav-div-image-wrapper p {
+.nav-div-image-wrapper p {
     max-width: 50px;
     display: inline-block;
     font-size: 18px;
@@ -53,6 +53,8 @@ div.nav-div-image-wrapper p {
 .left-bar {
     background-color: #7d0909;
     margin: 5px;
+    max-width: 300px;
+    width: 300px;
 }
 
 .links-list {
@@ -72,8 +74,10 @@ div.nav-div-image-wrapper p {
 
 .content {
     padding: 10px;
+    flex: 1;
 }
-div.content p{
+
+.content p{
     font-size: 18px;
     color: white;
     padding-bottom: 10px;
@@ -92,8 +96,8 @@ div.content p{
 }
 
 hr {
-    width: 70%;
-    margin: auto;
+    width: calc(100% - 20);
+    margin: 0 20px;
 }
 
 .right-bar p {
@@ -105,7 +109,7 @@ footer {
     margin-top: 20px;
     height: 100px;
 }
-footer div.copyright {
+div.copyright {
     background: #e95b11;
     color: white;
     text-align: center;
