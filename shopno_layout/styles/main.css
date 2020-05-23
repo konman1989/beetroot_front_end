@@ -1,0 +1,368 @@
+body {
+}
+
+.main-container {
+}
+
+.content-container {
+	max-width: 1188px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.title-block {
+	text-align: center;
+	max-width: 582px;
+	text-transform: uppercase;
+	font-size: 45px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.title-block p:nth-child(2) {
+	font-size: 18px;
+	font-family: 'Merriweather-Regular', sans-serif;
+	margin-top: 8px;
+}
+
+/*Title page styles*/
+
+.title-page {
+	background-color: #EFF0F2;
+}
+
+.title-page-content-container {
+	display: flex;
+	flex-direction: column;
+	padding-top: 78px;
+	margin: auto;
+}
+
+header {
+	max-height: 46px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-image-wrapper {
+}
+.title-page-title-wrapper {
+	padding-top: 243px;
+}
+.title-page-title {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.title-page-title span {
+	background-color: #6df6eb;
+}
+
+.bottom-title-page {
+	position: relative;
+	padding-top: 101px;
+	padding-bottom: 153px;
+	display: flex;
+	justify-content: center;
+}
+.contact-button {
+	height: 53px;
+	width: 232px;
+	cursor: pointer;
+	border: 1px solid black;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	/*font-weight: 100;*/
+	text-transform: uppercase;
+	transition-duration: 0.4s;
+	align-self: center;
+}
+
+.contact-button:hover {
+  background-color: #6df6eb;
+}
+
+.cork {
+	position: absolute;
+	bottom: 100px;
+	right: 200px;
+}
+
+.bucket {
+	position: absolute;
+	bottom: 115px;
+	right: 200px;
+}
+
+.shadow {
+	position: absolute;
+	bottom: 35px;
+	right: 165px;
+}
+
+.color-spill {
+	position: absolute;
+	bottom: 115px;
+	right: 200px;
+}
+
+
+/*About us styles*/
+
+.about-us {
+	background-color: #F8FAFA;
+}
+
+.about-us-content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 119px;
+	margin: auto;
+}
+
+.about-us-main-content {
+	display: flex;
+	padding-top: 109px;
+	flex-wrap: wrap;
+	padding-bottom: 100px;
+}
+
+.about-us-image-wrapper {
+	width: 100%;
+	max-width: 479px;
+	padding-right: 30px;
+}
+
+.about-us-image-wrapper img {
+	width: 100%;
+}
+.about-us-text-wrapper {
+	width: 100%;
+	max-width: 500px;
+	padding-top: 45px;
+}
+
+.about-us-text-wrapper h3 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Merriweather', sans-serif;
+	padding-bottom: 26px;
+}
+
+.about-us-text-wrapper p {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 26px;
+}
+
+
+/*Featured works styles*/
+
+.featured-works {
+	background-color:  #FFFFFF;
+}
+
+.featured-works-content-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 119px;
+	margin: auto;
+}
+
+.featured-works-list {
+	padding-top: 109px;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 109px;
+}
+
+.featured-works-list-card {
+	width: 100%;
+	max-width: calc((1140px - 39px) / 3);
+	margin-right: 13px;
+	margin-bottom: 13px;
+	font-size: 0;
+}
+
+.featured-works-list-card img {
+	width: 100%;
+	min-width: 300px;
+}
+
+/*Our service styles*/
+
+.our-service {
+	background-color: #F9FBFB;
+}
+
+.our-service-content-container {
+	min-height: 1618px;
+	padding-top: 114px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.our-service-content-container .title-block {
+	margin-bottom: 120px;
+}
+
+.our-service-list-card {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.our-service-list {
+	width: 100%;
+	min-height: 1188px;
+	/* display: flex; */
+	font-size: 0;
+}
+
+.our-service-list-card {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	font-size: 16px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.our-service-list-card-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #6df6eb;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.our-service-list-card:hover .our-service-list-card-overlay {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.our-service-list-card.width-big {
+	max-width: 652px;
+}
+
+.our-service-list-card.width-middle {
+	max-width: 474px;
+}
+
+.our-service-list-card.height-big {
+	min-height: 422px;
+}
+
+.our-service-list-card.height-middle {
+	min-height: 370px;
+}
+
+.our-service-list > *:nth-child(1) {
+	margin-right: 14px;
+}
+
+.our-service-list > *:nth-child(3) {
+	margin-right: 14px;
+	margin-top: 14px;
+}
+
+.our-service-list > *:nth-child(5) {
+	margin-right: 14px;
+	margin-top: 14px;
+}
+
+.overlay-text-wrapper {
+	width: 100%;
+	padding: 50px 100px 50px 50px;
+}
+
+.overlay-text-wrapper h3 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Merriweather', sans-serif;
+	padding-bottom: 26px;
+}
+
+.overlay-text-wrapper p {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 26px;
+}
+
+/*Small team styles*/
+
+.small-team {
+}
+
+.small-team-list-card {
+	position: relative;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.small-team-list-card-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-width: calc(100% - 40px);
+	max-height: calc(50% - 10px);
+	bottom: 0;
+	left: 0;
+	margin: 0 20px 20px 20px;
+	background-color: #6df6eb;
+	opacity: 0;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.small-team-list-card-overlay-arrow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-width: 20px;
+	max-height: 20px;
+	top: -10px;
+	left: 40px;
+	background-color: #6df6eb;
+	opacity: 0;
+	transform: skew(-45deg, 45deg);
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.small-team-list-card:hover .small-team-list-card-overlay {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.small-team-list-card:hover .small-team-list-card-overlay-arrow {
+	opacity: 1;
+}
+
+.small-team-list-card-overlay.overlay-text-wrapper h3{
+	text-align: center;
+}
+
+.small-team-list-card-overlay.overlay-text-wrapper {
+	padding: 50px 0;
+}
+.small-team-list-card-overlay.overlay-text-wrapper h3 span {
+	font-size: 15px;
+	text-transform: none;
+	font-weight: lighter;
+	font-family: 'Merriweather-Regular', sans-serif;
+}
+
+.small-team-list-card-overlay.overlay-text-wrapper p {
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 26px;
+	margin: 0 50px;
+}
