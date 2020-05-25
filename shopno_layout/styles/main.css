@@ -66,6 +66,7 @@ header {
 	padding-bottom: 153px;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 }
 .contact-button {
 	height: 53px;
@@ -85,30 +86,35 @@ header {
   background-color: #6df6eb;
 }
 
+.bucket-image {
+	position: relative;
+	align-self: flex-end;
+	width: 100px;
+	height: 100px;
+}
 .cork {
 	position: absolute;
-	bottom: 100px;
-	right: 200px;
+	bottom: 0;
+	right: 100px;
 }
 
 .bucket {
 	position: absolute;
-	bottom: 115px;
-	right: 200px;
+	bottom: 15px;
+	right: 100px;
 }
 
 .shadow {
 	position: absolute;
-	bottom: 35px;
-	right: 165px;
+	bottom: -65px;
+	right: 65px;
 }
 
 .color-spill {
 	position: absolute;
-	bottom: 115px;
-	right: 200px;
+	bottom: 15px;
+	right: 100px;
 }
-
 
 /*About us styles*/
 
