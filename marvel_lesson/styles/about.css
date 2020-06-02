@@ -1,0 +1,136 @@
+.about {
+    background-image: url("./../assets/images/ipad.svg"), url("./../assets/images/about-circle.svg");
+    background-repeat: no-repeat;
+    background-position: 130% 65%, -300% 10%;
+}
+
+.about__content-container {
+    min-height: 1414px;
+    padding-top: 73px;
+    padding-bottom: 144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-title {
+    margin-bottom: 58px;
+}
+
+.about__button-container {
+    display: flex;
+    margin-bottom: 83px;
+}
+
+.about__button {
+    height: 62px;
+    width: 226px;
+}
+
+.about__button:first-child {
+    margin-right: 24px;
+}
+
+.about__list {
+    margin-bottom: 176px;
+}
+
+.about-list-item {
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    max-width: calc((100% - 80px) / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: #212121;
+}
+
+.about-item-icon {
+    padding-top: 85px;
+    padding-bottom: 24px;
+}
+
+.about-item-icon-wrapper {
+    position: relative;
+    width: 139px;
+    height: 132px;
+    border-radius: 10px;
+    border: solid 15px;
+    border-color: #FFE400;
+}
+
+.about-item-icon-wrapper span {
+    color: #FFE400;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about__list h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.about-list-item-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+	width: 100%;
+	height: 100%;
+    z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #FFE400;
+	opacity: 0;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+    padding-top: 48px;
+}
+
+.about-list-item-overlay p {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 25px 25px 0 25px;
+}
+
+.about-item-icon-wrapper-overlay {
+    border-color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.about-list-item:hover .about-list-item-overlay {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.about__h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 104px;
+    text-align: center;
+}
+
+.about-list-item-facts h2{
+    color: black;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.about-list-item-facts p{
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.facts-list {
+    margin-bottom: 144px;
+}
