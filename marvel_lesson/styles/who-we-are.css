@@ -1,0 +1,36 @@
+.who-we-are {
+    background-image: url("./../assets/images/who-we-are-background.svg");
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.who-we-are__content-container {
+    min-height: 652px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 257px;
+    color: white;
+}
+
+.who-we-are__h2 {
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.who-we-are__p {
+    padding-top: 32px;
+    width: 752px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 50px;
+}
+
+.who-we-are__button--transparent {
+    color: white;
+    border-color: white;
+}

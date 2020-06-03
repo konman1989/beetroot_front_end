@@ -1,0 +1,42 @@
+.boost-your-website {
+    background-image: url("./../assets/images/boost-your-website-light-lamp.svg"), url("./../assets/images/boost-your-website-runninng.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -50%, 80% 30%;
+    background-color: #FAFAFA;
+    position: relative;
+    z-index: -1;
+}
+
+.boost-your-website__content-container {
+    min-height: 590px;
+}
+
+.boost-your-website__title {
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.boost-your-website__title h2 {
+    left: 0;
+    transform: translateX(0);
+}
+
+.boost-your-website__content {
+    padding-top: 50px;
+    max-width: 558px;
+}
+
+.boost-your-website__p {
+    margin-bottom: 50px;
+}
+
+.boost-your-website__list {
+    list-style: none;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.boost-your-website__button {
+    width: 127px;
+    height: 43px;
+}

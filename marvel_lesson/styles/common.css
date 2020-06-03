@@ -81,6 +81,22 @@
 	background-color: #ffe400;
 }
 
+.horizontal-button-container {
+    display: flex;
+    margin-bottom: 83px;
+	text-transform: capitalize;
+}
+
+.horizontal-button-container__button {
+    height: 62px;
+    width: 226px;
+    text-transform: capitalize;
+}
+
+.horizontal-button-container__button:first-child {
+    margin-right: 24px;
+}
+
 .list {
 	list-style: none;
 	display: flex;

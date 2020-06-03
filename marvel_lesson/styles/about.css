@@ -18,20 +18,6 @@
     margin-bottom: 58px;
 }
 
-.about__button-container {
-    display: flex;
-    margin-bottom: 83px;
-}
-
-.about__button {
-    height: 62px;
-    width: 226px;
-}
-
-.about__button:first-child {
-    margin-right: 24px;
-}
-
 .about__list {
     margin-bottom: 176px;
 }
