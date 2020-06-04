@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@300;400;500;700;900&family=Muli&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@300;400;500;700;900&family=Muli&family=Poppins&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./styles/ionicons.css">
@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="./styles/boost-your-website.css"/>
 		<link rel="stylesheet" href="./styles/who-we-are.css"/>
 		<link rel="stylesheet" href="./styles/features.css"/>
+		<link rel="stylesheet" href="./styles/contact.css"/>
 
 		<title>Marvel</title>
 	</head>
@@ -200,7 +201,7 @@
 							<li>powerful admin panle.</li>
 							<li>24/7 support.</li>
 						</ul>
-						<button class="button button--yellow boost-your-website__button">
+						<button class="button button--yellow button--small">
 							purchase
 						</button>
 					</div>
@@ -255,6 +256,37 @@
 						<li class="fetures-list-item">8</li>
 						<li class="fetures-list-item">9</li>
 					</ul>
+				</div>
+			</section>
+
+			<section class="contact">
+				<div class="content-container contact__content-container">
+					<div class="section-title contact__title">
+						<h2>contact</h2>
+						<p>send us message</p>
+					</div>
+
+					<form class="contact__form" action="">
+						<label for="first_name" class="contact-us__input-block">
+							<input type="text" id="first_name" name="first_name" minlength="3" placeholder="First Name (Required)" required>
+						</label>
+						<label for="last_name" class="contact-us__input-block">
+							<input type="text" id="last_name" name="last_name" minlength="3" placeholder="Last Name (Required)" required>
+						</label>
+						<label for="email" class="contact-us__input-block">
+							<input type="email" id="email" name="email" placeholder="Email (Required)" required>
+						</label>
+						<label for="subject" class="contact-us__input-block">
+							<input type="text" id="subject" name="suject" placeholder="Subject">
+						</label>
+						<label class="contact-us__textarea-block" for="message">
+							<textarea id="message" name="message" placeholder="Type your message"></textarea>
+						</label>
+						<button type="submit" class="button button--yellow button--small">
+							send
+						</button>
+					</form>
+
 				</div>
 			</section>
 		</main>

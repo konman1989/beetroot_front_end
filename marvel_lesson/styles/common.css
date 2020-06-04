@@ -81,6 +81,11 @@
 	background-color: #ffe400;
 }
 
+.button--small {
+    width: 127px;
+    height: 43px;
+}
+
 .horizontal-button-container {
     display: flex;
     margin-bottom: 83px;
