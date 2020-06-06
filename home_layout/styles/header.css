@@ -15,9 +15,6 @@
 .header__navbar {
 }
 
-.navbar__item {
-    margin-left: 24px;
-    text-transform: capitalize;
-    text-decoration: none;
+.header__navbar-item {
     color: #FFFFFF;
 }

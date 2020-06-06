@@ -1,4 +1,4 @@
-.about {
+#about {
     background-color: #F8F8F8;
 }
 
@@ -9,10 +9,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-.about__title {
-    margin-bottom: 70px;
 }
 
 .about__team-list {

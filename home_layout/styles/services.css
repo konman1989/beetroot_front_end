@@ -1,4 +1,4 @@
-.services {
+#services {
 }
 
 .services__content-container {
@@ -8,11 +8,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-
-.services__title {
-    margin-bottom: 70px;
 }
 
 .services__services-list {

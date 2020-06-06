@@ -1,0 +1,40 @@
+.promo {
+    background-image: url("./../assets/images/promo-img.svg");
+    background-repeat: no-repeat;
+}
+
+.promo__layer {
+    background-color: #C0301C;
+    opacity: 0.6;
+}
+
+.promo__content-container {
+    min-height: 369px;
+    padding-top: 98px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.promo__title {
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+.promo__h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.promo__h2 span {
+    text-transform: uppercase;
+}
+
+.promo__button {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+
+}
