@@ -1,0 +1,23 @@
+.header__content-container {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.header__navbar {
+}
+
+.navbar__item {
+    margin-left: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #FFFFFF;
+}
