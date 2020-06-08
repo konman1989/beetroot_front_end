@@ -11,6 +11,17 @@
     align-items: center;
 }
 
+.about__content {
+	display: flex;
+	color: #555555;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+
+.about__content p:first-child {
+	margin-right: 30px;
+}
+
 .about__team-list {
     display: flex;
     justify-content: flex-start;

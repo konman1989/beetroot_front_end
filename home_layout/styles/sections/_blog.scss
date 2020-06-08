@@ -1,0 +1,23 @@
+#blog {
+}
+
+.blog__content-container {
+    min-height: 1078px;
+    border: 1px solid black;
+}
+
+.blog__title {
+    padding-top: 92px;
+}
+
+.blog__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.blog__item {
+
+}
+
