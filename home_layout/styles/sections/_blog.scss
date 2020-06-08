@@ -1,23 +1,29 @@
+@import "./../colors";
+@import "./../fonts";
+@import "./../mixins";
+
+
 #blog {
 }
 
-.blog__content-container {
+.blog {
+  &__content-container {
     min-height: 1078px;
     border: 1px solid black;
-}
+  }
 
-.blog__title {
+  &__title {
     padding-top: 92px;
+  }
+
+  &__content {
+    @include center-top;
+  }
+
+  &__item {
+
+  }
 }
 
-.blog__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
 
-.blog__item {
-
-}
 

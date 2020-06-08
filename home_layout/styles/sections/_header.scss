@@ -1,20 +1,25 @@
-.header__content-container {
+@import "./../colors";
+@import "./../fonts";
+
+
+.header {
+  &__content-container {
     padding-top: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.header__logo {
+  &__logo {
     font-weight: 700;
     font-size: 24px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: $white;
+  }
+
+  &__navbar-item {
+    color: $white;
+  }
+
 }
 
-.header__navbar {
-}
-
-.header__navbar-item {
-    color: #FFFFFF;
-}

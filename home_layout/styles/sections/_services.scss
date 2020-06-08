@@ -1,61 +1,62 @@
+@import "./../colors";
+@import "./../fonts";
+@import "./../mixins";
+
 #services {
 }
 
-.services__content-container {
+.services {
+  &__content-container {
     min-height: 578px;
     padding-top: 96px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+    @include center-top;
+  }
 
-.services__services-list {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  &__services-list {
+    @include center;
     margin-bottom: 82px;
-}
 
-.services__list-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    @media (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__list-item {
+    @include center-top;
     text-align: center;
-}
+  }
 
-.services__list-item-icon {
-    color: #C0301C;
+  &__list-item-icon {
+    color: $red1;
     font-size: 90px;
-}
+  }
 
-
-.services__list-item:nth-child(2) {
+  &__list-item:nth-child(2) {
     margin: 0 30px;
-}
+  }
 
-.services__list-item-info {
-    color: #555555;
+  &__list-item-info {
+    color: $common-red;
     text-align: center;
+  }
+
+  &__list-item-info {
+    h2 {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list-item-info {
+    p {
+      font-family: $p-font;
+      font-weight: 200;
+      line-height: 24px;
+    }
+  }
 }
 
-.services__list-item-info h2 {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
 
-.services__list-item-info p {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 200;
-    line-height: 24px;
-}
-
-@media (max-width: 767px) {
-	.services__services-list {
-		display: flex;
-        flex-wrap: wrap;
-	}
-}

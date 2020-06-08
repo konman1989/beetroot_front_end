@@ -1,79 +1,82 @@
+@import "./../colors";
+@import "./../fonts";
+@import "./../mixins";
+
+
 #latest-works {
 }
 
-.latest-works__content-container {
+.latest-works {
+  &__content-container {
     min-height: 1381px;
     padding-top: 96px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+    @include center-top;
+  }
 
-.latest-works__navbar-item {
-    font-family: 'Roboto Slab', serif;
+  &__navbar-item {
+    font-family: $p-font;
     font-size: 16px;
-    color: #555555;
-}
+    color: $common-red;
+  }
 
-.latest-works__navbar-item:hover {
-    color: #C0301C;
-}
+  &__navbar-item:hover {
+    color: $red1;
+  }
 
-.latest-works__list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 100px;
-}
+  }
 
-.latest-works__img {
+  &__img {
     position: relative;
     margin-bottom: 30px;
-}
+  }
 
-.latest-works__img-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  &__img-overlay {
+    @include center-top;
     padding-top: 103px;
     position: absolute;
     width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: #C0301C;
-    color: #FFFFFF;
-	opacity: 0;
-	transition: opacity 0.5s ease;
-}
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $red1;
+    color: $white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
 
-.latest-works__img:hover .latest-works__img-overlay {
-	opacity: 0.8;
-}
+  &__img:hover &__img-overlay {
+    opacity: 0.8;
+  }
 
-.latest-works__h2-overlay {
+  &__h2-overlay {
     text-transform: capitalize;
     margin-bottom: 9px;
     font-size: 16px;
     font-weight: 400;
-}
+  }
 
-.latest-works__p-overlay {
+  &__p-overlay {
     text-transform: capitalize;
-    font-family: 'Roboto Slab', serif;
+    font-family: $p-font;
     font-size: 12px;
     margin-bottom: 25px;
-}
+  }
 
-.latest-works__button {
+  &__button {
     width: 100px;
     height: 38px;
-    color: #C0301C;
-    background-color: #FFFFFF;
+    color: $red1;
+    background-color: $white;
     font-size: 14px;
+  }
 }
+
+
 
 
 
