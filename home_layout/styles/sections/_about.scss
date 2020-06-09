@@ -21,8 +21,10 @@
   }
 
   &__content {
-    p:first-child {
-      margin-right: 30px;
+    p {
+      &:first-child {
+        margin-right: 30px;
+      }
     }
   }
 
@@ -42,19 +44,23 @@
     text-align: center;
 
     @media (max-width: 767px) {
-      li:not(:first-child) {
-        margin-left: 0;
-      }
+      li {
+        &:not(:first-child) {
+          margin-left: 0;
+        }
 
-      li:nth-child(2n) {
-        margin-left: 40px;
+        &:nth-child(2n) {
+          margin-left: 40px;
+        }
       }
     }
   }
 
   &__team-list {
-    li:not(:first-child) {
-      margin-left: 29px;
+    li {
+      &:not(:first-child) {
+        margin-left: 29px;
+      }
     }
   }
 
@@ -73,7 +79,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: $common-red;
+    //background-color: $common-red;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -85,8 +91,13 @@
   &__url {
     font-size: 24px;
     color: $white;
+    &:hover {
+      color: $red1;
+    }
   }
+
 }
+
 
 .team {
   &__h2 {
