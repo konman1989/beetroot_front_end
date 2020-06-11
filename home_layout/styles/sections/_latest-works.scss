@@ -16,11 +16,11 @@
   &__navbar-item {
     font-family: $p-font;
     font-size: 16px;
-    color: $common-red;
+    color: $grey;
   }
 
   &__navbar-item:hover {
-    color: $red1;
+    color: $red;
   }
 
   &__list {
@@ -43,7 +43,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: $red1;
+    background-color: $red;
     color: $white;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -70,7 +70,7 @@
   &__button {
     width: 100px;
     height: 38px;
-    color: $red1;
+    color: $red;
     background-color: $white;
     font-size: 14px;
   }

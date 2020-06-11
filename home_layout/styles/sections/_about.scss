@@ -15,7 +15,7 @@
 
   &__content {
     display: flex;
-    color: $common-red;
+    color: $grey;
     line-height: 24px;
     margin-bottom: 50px;
   }
@@ -79,7 +79,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    //background-color: $common-red;
+    background-color: $grey;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -92,7 +92,7 @@
     font-size: 24px;
     color: $white;
     &:hover {
-      color: $red1;
+      color: $red;
     }
   }
 
