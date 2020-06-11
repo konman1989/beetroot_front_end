@@ -2,6 +2,7 @@
 @import "./../fonts";
 @import "./../mixins";
 
+//TODO add arrows on slider
 #about {
   background-color: $section-grey;
 }
@@ -65,6 +66,7 @@
   }
 
   &__img {
+    max-width: 264px;
     position: relative;
     margin-bottom: 16px;
   }
