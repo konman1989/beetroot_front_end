@@ -1,0 +1,47 @@
+@import "./../colors";
+@import "./../fonts";
+@import "./../mixins";
+
+#footer {
+  background-color: $red;
+}
+
+.footer {
+  &__content-container {
+    min-height: 307px;
+    //@include center-top
+  }
+}
+
+.footer-list {
+  display: flex;
+  padding-top: 100px;
+  margin-bottom: 32px;
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    color: $white;
+    font-size: 16px;
+    margin-right: 14px;
+    text-decoration: none;
+  }
+}
+
+.footer-title {
+  hr.footer-title__hr {
+    border-top: 2px solid $white;
+  }
+
+  p.footer-title__p {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+
