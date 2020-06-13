@@ -1,6 +1,7 @@
 @import "./../colors";
 @import "./../fonts";
 @import "./../mixins";
+@import "./../configs";
 
 //TODO add arrows on slider
 #about {
@@ -19,6 +20,15 @@
     color: $grey;
     line-height: 24px;
     margin-bottom: 50px;
+
+    @media (max-width: $breakpoint-up-xs) {
+      flex-direction: column;
+      p {
+        &:first-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
   }
 
   &__content {
@@ -34,34 +44,43 @@
     justify-content: flex-start;
     margin-bottom: 98px;
 
-    @media (max-width: 767px) {
+    @media (max-width: $breakpoint-up-sm) {
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       flex-wrap: wrap;
-    }
-  }
 
-  &__list-item {
-    text-align: center;
-
-    @media (max-width: 767px) {
       li {
+        flex: 50%;
+
         &:not(:first-child) {
           margin-left: 0;
         }
 
         &:nth-child(2n) {
-          margin-left: 40px;
+          margin-bottom: 40px;
         }
+      }
+    }
+
+    @media (max-width: $breakpoint-up-xs) {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      li {
+        margin-bottom: 40px;
       }
     }
   }
 
-  &__team-list {
-    li {
-      &:not(:first-child) {
-        margin-left: 29px;
-      }
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:not(:first-child) {
+      margin-left: 29px;
     }
   }
 
@@ -73,7 +92,7 @@
 
   &__img-overlay {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     position: absolute;
     padding: 0 75px 32px 75px;
@@ -93,13 +112,16 @@
   &__url {
     font-size: 24px;
     color: $white;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
     &:hover {
       color: $red;
     }
   }
-
 }
-
 
 .team {
   &__h2 {
