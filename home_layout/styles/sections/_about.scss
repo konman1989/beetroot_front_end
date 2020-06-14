@@ -21,7 +21,7 @@
     line-height: 24px;
     margin-bottom: 50px;
 
-    @media (max-width: $breakpoint-up-xs) {
+    @media screen and (max-width: $breakpoint-up-xs) {
       flex-direction: column;
       p {
         &:first-child {
@@ -44,7 +44,7 @@
     justify-content: flex-start;
     margin-bottom: 98px;
 
-    @media (max-width: $breakpoint-up-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap;
@@ -62,7 +62,7 @@
       }
     }
 
-    @media (max-width: $breakpoint-up-xs) {
+    @media screen and (max-width: $breakpoint-up-xs) {
       display: flex;
       justify-content: flex-end;
       flex-direction: column;

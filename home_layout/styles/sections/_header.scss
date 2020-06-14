@@ -98,7 +98,7 @@
       top: 8px;
     }
 
-    @media (max-width: $breakpoint-up-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       visibility: visible;
     }
   }

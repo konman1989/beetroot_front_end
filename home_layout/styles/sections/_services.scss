@@ -16,7 +16,7 @@
     @include center;
     margin-bottom: 82px;
 
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-wrap: wrap;
     }

@@ -18,7 +18,7 @@
   &__content {
     display: flex;
     margin-bottom: 102px;
-    @media (max-width: $breakpoint-up-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       flex-direction: column;
     }
   }
@@ -28,11 +28,11 @@
   color: $grey;
 
   &__list {
-    @media (max-width: $breakpoint-up-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       display: flex;
     }
 
-    @media (max-width: $breakpoint-up-xs) {
+    @media screen and (max-width: $breakpoint-up-xs) {
       flex-direction: column;
     }
   }
@@ -43,11 +43,11 @@
     margin-right: 98px;
     min-width: 298px;
 
-    @media (max-width: $breakpoint-up-md) {
+    @media screen and (max-width: $breakpoint-up-md) {
       margin-right: 0;
     }
 
-    @media (max-width: $breakpoint-up-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       min-width: 0;
       margin-right: 40px;
       white-space: nowrap;

@@ -22,7 +22,7 @@
     justify-content: space-evenly;
     margin-bottom: 68px;
 
-    @media (max-width: $breakpoint-up-sm) {
+    @media screen and (max-width: $breakpoint-up-sm) {
       flex-wrap: wrap;
     }
   }

@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  @media (max-width: $breakpoint-up-sm) {
+  @media screen and (max-width: $breakpoint-up-sm) {
     display: none;
   }
 }
