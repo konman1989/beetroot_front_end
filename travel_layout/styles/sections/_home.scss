@@ -1,0 +1,88 @@
+@import "./../colors";
+@import "./../mixins";
+@import "./../fonts";
+
+#home {
+  background-image: url("./../../assets/images/home.svg");
+}
+
+.home {
+  &__content-container {
+    @include center-top;
+    text-align: center;
+    min-height: 740px;
+  }
+
+  &__title {
+    color: $white;
+    padding-top: 266px;
+    margin-bottom: 48px;
+
+    h1 {
+      font-size: 48px;
+      letter-spacing: 5px;
+      line-height: 26px;
+      font-family: $title-font;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 22px;
+      letter-spacing: 7px;
+      line-height: 26px;
+      font-family: $title-font;
+      text-transform: capitalize;
+    }
+  }
+
+  &__scroll {
+    a {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      letter-spacing: 3px;
+      line-height: 26px;
+      color: $white;
+      font-family: $title-font;
+      text-align: center;
+      text-decoration: none;
+      text-transform: capitalize;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.home-form {
+  max-width: 650px;
+  width: 100%;
+  margin-bottom: 120px;
+
+  &__input-block {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: $white;
+
+    input {
+      width: 100%;
+      max-width: 500px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      line-height: 26px;
+      color: $grey;
+      font-family: $title-font;
+      text-align: center;
+      border: none;
+      padding: 0 10px;
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
