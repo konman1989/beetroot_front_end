@@ -1,0 +1,56 @@
+@import "./../colors";
+@import "./../fonts";
+
+.testimonials {
+  background-image: url("./../../assets/images/testimonials-main.svg");
+
+  &__content-container {
+    height: 732px;
+    padding-top: 120px;
+
+    h2 {
+      font-size: 36px;
+      line-height: 26px;
+      color: $white;
+      font-family: $button-font;
+      font-weight: 400;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 92px;
+    }
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__img-wrapper {
+    max-width: 445px;
+  }
+
+  &__text-wrapper {
+    max-width: 656px;
+    max-height: 284px;
+    padding: 46px 50px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 26px;
+      color: $white-testimonial;
+      font-family: $title-font;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      color: $white-testimonial;
+      font-family: $title-font;
+    }
+
+    i {
+      color: $blue;
+    }
+  }
+}
