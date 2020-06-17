@@ -1,0 +1,37 @@
+@import "./../colors";
+@import "./../fonts";
+
+.header {
+  background-color: $blue;
+
+  &__content-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    line-height: 26px;
+    color: $white;
+    font-family: $title-font;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__navbar {
+    display: flex;
+
+    a {
+      color: $white;
+      font-size: 14px;
+      line-height: 26px;
+      font-family: $button-font;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-left: 46px;
+    }
+  }
+}

@@ -32,12 +32,47 @@
   background-color: $blue;
   font-family: $button-font;
   font-weight: 400;
-  border: 2px solid $white;
   transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 
   &--small {
     width: 150px;
+    border: 2px solid $white;
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.promo-content {
+  font-family: $title-font;
+
+  &__p--header-small {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: $white-p;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+  &__p--header-big {
+    font-size: 20px;
+    line-height: 26px;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__p--paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: $white-p;
+    margin-bottom: 30px;
+  }
+}
 

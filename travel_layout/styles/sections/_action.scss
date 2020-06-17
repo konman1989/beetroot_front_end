@@ -1,0 +1,50 @@
+@import "./../colors";
+@import "./../fonts";
+
+.how-it-works {
+  background-color: $grey-dark;
+
+  &__content-container {
+    height: 338px;
+    border: 1px solid black;
+  }
+
+  &__list {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    margin: 0 86px;
+  }
+
+  &__list-item {
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 86px;
+    color: $white-p;
+    font-size: 36px;
+    line-height: 26px;
+    font-family: $button-font;
+    font-weight: 400;
+    text-transform: capitalize;
+    white-space: nowrap;
+
+    i {
+      margin-bottom: 34px;
+      font-size: 60px;
+    }
+  }
+
+  &__icon--red {
+    color: $red;
+  }
+  &__icon--blue {
+    color: $blue;
+  }
+
+  &__icon--light-blue {
+    color: $blue-light;
+  }
+}

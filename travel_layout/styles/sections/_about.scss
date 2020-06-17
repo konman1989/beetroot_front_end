@@ -1,0 +1,56 @@
+@import "./../colors";
+@import "./../fonts";
+
+#about {
+  background-image: url("./../../assets/images/about.svg");
+}
+
+.about {
+  &__content-container {
+    height: 686px;
+    display: flex;
+  }
+
+  &__content {
+    padding-top: 204px;
+    color: $white;
+    max-width: 540px;
+    margin-right: 94px;
+
+    h2 {
+      font-size: 36px;
+      line-height: 26px;
+      font-family: $button-font;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-bottom: 52px;
+      white-space: nowrap;
+    }
+
+    p {
+      font-size: 16px;
+      letter-spacing: 2px;
+      line-height: 26px;
+      color: $white-p;
+      font-family: $title-font;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__images {
+    padding-top: 120px;
+    max-width: 475px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-wrapper {
+    max-width: 350px;
+
+    &:last-child {
+      align-self: flex-end;
+    }
+  }
+
+}

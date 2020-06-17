@@ -1,3 +1,5 @@
+@import "./colors";
+
 @mixin center-top {
   display: flex;
   flex-direction: column;
@@ -5,8 +7,28 @@
   align-items: center;
 }
 
-@mixin center {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+@mixin promo-section($url, $flex-position) {
+  background-image: url($url);
+
+  &__content-container {
+    height: 700px;
+    padding-top: 228px;
+    display: flex;
+    justify-content: $flex-position;
+  }
+
+  &__content {
+    max-width: 540px;
+    height: 370px;
+    width: 100%;
+    background-color: rgba($grey-transparent, 0.8);
+    padding: 50px 32px;
+  }
 }
+
+//@mixin center {
+//  display: flex;
+//  justify-content: flex-start;
+//  align-items: center;
+//}
+

@@ -1,0 +1,11 @@
+@import "./../colors";
+@import "./../fonts";
+@import "./../mixins";
+
+.promo-1 {
+  @include promo-section("./../../assets/images/promo-1.svg", flex-start)
+}
+
+.promo-2 {
+  @include promo-section("./../../assets/images/promo-2.svg", flex-end)
+}
