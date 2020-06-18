@@ -1,4 +1,5 @@
 @import "./colors";
+@import "./configs";
 
 @mixin center-top {
   display: flex;
@@ -15,6 +16,10 @@
     padding-top: 228px;
     display: flex;
     justify-content: $flex-position;
+
+    @media screen and (max-width: $breakpoint-up-xxs){
+      padding-top: 114px;
+    }
   }
 
   &__content {
@@ -23,6 +28,10 @@
     width: 100%;
     background-color: rgba($grey-transparent, 0.8);
     padding: 50px 32px;
+
+    @media screen and (max-width: $breakpoint-up-xxs){
+      height: 470px;
+    }
   }
 }
 
