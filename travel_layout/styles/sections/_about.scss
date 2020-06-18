@@ -1,5 +1,6 @@
 @import "./../colors";
 @import "./../fonts";
+@import "./../configs";
 
 #about {
   background-image: url("./../../assets/images/about.svg");
@@ -35,6 +36,14 @@
       font-family: $title-font;
       margin-bottom: 30px;
     }
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      padding-top: 102px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      margin-right: 48px;
+    }
   }
 
   &__images {
@@ -43,10 +52,21 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+     @media screen and (max-width: $breakpoint-up-xs) {
+      display: none;
+    }
   }
 
   &__img-wrapper {
     max-width: 350px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      max-width: 300px;
+      &:first-child {
+        margin-bottom: 30px;
+    }
+    }
 
     &:last-child {
       align-self: flex-end;
