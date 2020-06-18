@@ -1,5 +1,6 @@
 @import "./../colors";
 @import "./../fonts";
+@import "./../configs";
 
 .testimonials {
   background-image: url("./../../assets/images/testimonials-main.svg");
@@ -17,15 +18,29 @@
       text-align: center;
       text-transform: capitalize;
       margin-bottom: 92px;
+
+      @media screen and (max-width: $breakpoint-up-xs) {
+        line-height: 48px;
+        margin-bottom: 46px;
+      }
     }
   }
 
   &__content {
     display: flex;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+        justify-content: center;
+      }
   }
 
   &__img-wrapper {
     max-width: 445px;
+    min-width: 445px;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+        display: none;
+      }
   }
 
   &__text-wrapper {
@@ -34,6 +49,14 @@
     max-height: 284px;
     padding: 46px 50px;
 
+    @media screen and (max-width: $breakpoint-up-lg) {
+        padding: 32px 32px;
+      }
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+        max-height: 484px;
+      }
+
     h3 {
       font-size: 20px;
       line-height: 26px;
@@ -41,6 +64,10 @@
       font-family: $title-font;
       text-transform: uppercase;
       margin-bottom: 36px;
+
+      @media screen and (max-width: $breakpoint-up-lg) {
+        margin-bottom: 18px;
+      }
     }
 
     p {
