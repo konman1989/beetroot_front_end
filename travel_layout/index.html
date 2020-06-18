@@ -28,7 +28,7 @@
           </label>
         </form>
         <div class="home__scroll">
-          <a href="#">
+          <a href="#about">
             scroll down
             <i class="fas fa-angle-down"></i>
           </a>
@@ -44,10 +44,25 @@
 
         <nav class="header__navbar navbar">
           <a href="" class="navbar__item">who we are</a>
-          <a href="" class="navbar__item">what we do</a>
-          <a href="" class="navbar__item">travel with us</a>
+          <a href="#about" class="navbar__item">what we do</a>
+          <a href="#how-it-works" class="navbar__item">travel with us</a>
           <a href="" class="navbar__item">contact us</a>
         </nav>
+
+        <div class="header__hamburger-menu menu">
+            <input type="checkbox" id="menu__toggle">
+            <label for="menu__toggle" class="menu__btn">
+             <span></span>
+            </label>
+
+            <ul class="list menu__list">
+              <li><a class="menu__item" href="#home">who we are</a></li>
+              <li><a class="menu__item" href="#about">what we do</a></li>
+              <li><a class="menu__item" href="#how-it-works">travel with us</a></li>
+              <li><a class="menu__item" href="">contact us</a></li>
+            </ul>
+          </div>
+
       </div>
     </section>
 
@@ -74,9 +89,7 @@
       </div>
     </section>
 
-    <section class="how-it-works">
-
-<!--      TODO add round line between blocks-->
+    <section id="how-it-works" class="how-it-works">
 
       <div class="content-container how-it-works__content-container">
         <ul class="list how-it-works__list">

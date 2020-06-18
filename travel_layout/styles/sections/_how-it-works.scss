@@ -6,23 +6,21 @@
 
   &__content-container {
     height: 338px;
-    border: 1px solid black;
   }
 
   &__list {
     display: flex;
     justify-items: center;
     justify-content: center;
-    padding-top: 100px;
     margin: 0 86px;
   }
 
   &__list-item {
-    width: 215px;
+    max-width: 215px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    //margin: 0 86px;
     color: $white-p;
     font-size: 36px;
     line-height: 26px;
@@ -34,16 +32,19 @@
     i {
       margin-bottom: 34px;
       font-size: 60px;
+      padding-top: 100px;
     }
   }
 
   &__dotted-circle {
+    position: absolute;
     width: 340px;
-    height: 300px;
-    border-radius: 50%;
+    height: 280px;
+    border-radius: 100%;
     border: 2px dotted;
     border-color: $grey transparent transparent transparent;
     border-bottom: 0;
+    margin-top: 50px;
   }
 
   &__icon--red {

@@ -1,0 +1,108 @@
+@import "./../colors";
+@import "./../fonts";
+@import "./../configs";
+
+#menu {
+  &__toggle {
+    opacity: 0;
+
+    &:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+
+    &:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    &:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    &:checked ~ .menu__list {
+      visibility: visible;
+      right: 0;
+    }
+
+    &:checked ~ .menu__btn {
+      position: fixed;
+      z-index: 2;
+
+      > span::before,
+      > span::after {
+        background-color: $white;
+      }
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  position: relative;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+
+    > span,
+    > span::before,
+    > span::after {
+      display: flex;
+      position: absolute;
+      width: 32px;
+      height: 2px;
+      background-color: $white;
+    }
+
+    > span::before {
+      content: '';
+      top: -8px;
+    }
+
+    > span::after {
+      content: '';
+      top: 8px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      visibility: visible;
+    }
+  }
+
+  &__list {
+    display: block;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    top: 0;
+    right: 100%;
+    width: 300px;
+    height: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background-color: $grey-dark;
+  }
+
+  &__item {
+    display: block;
+    padding: 12px 24px;
+    color: $white;
+    font-family: $title-font;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: $grey;
+    }
+  }
+}
