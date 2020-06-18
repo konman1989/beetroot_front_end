@@ -1,5 +1,6 @@
 @import "./../colors";
 @import "./../fonts";
+@import "./../configs";
 
 .how-it-works {
   background-color: $grey-dark;
@@ -13,6 +14,15 @@
     justify-items: center;
     justify-content: center;
     margin: 0 86px;
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      margin: 42px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-xxs) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__list-item {
@@ -29,10 +39,33 @@
     text-transform: capitalize;
     white-space: nowrap;
 
+    @media screen and (max-width: $breakpoint-up-md){
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-xs) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-xxs) {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
     i {
       margin-bottom: 34px;
       font-size: 60px;
       padding-top: 100px;
+
+      @media screen and (max-width: $breakpoint-up-xxs) {
+        padding-top: 12px;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -45,6 +78,14 @@
     border-color: $grey transparent transparent transparent;
     border-bottom: 0;
     margin-top: 50px;
+
+    @media screen and (max-width: $breakpoint-up-md) {
+      width: 250px;
+    }
+
+    @media screen and (max-width: $breakpoint-up-sm) {
+      display: none;
+    }
   }
 
   &__icon--red {
