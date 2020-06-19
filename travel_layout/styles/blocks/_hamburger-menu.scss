@@ -28,6 +28,8 @@
     &:checked ~ .menu__btn {
       position: fixed;
       z-index: 2;
+      top: 20px;
+      right: 250px;
 
       > span::before,
       > span::after {
