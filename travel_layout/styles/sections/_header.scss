@@ -2,6 +2,11 @@
 @import "./../fonts";
 @import "./../configs";
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 .header {
   background-color: $blue;
 
