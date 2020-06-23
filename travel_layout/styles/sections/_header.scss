@@ -35,6 +35,10 @@
       margin-left: 46px;
       white-space: nowrap;
 
+      &:hover {
+        color: $white-p;
+      }
+
       @media screen and (max-width: $breakpoint-up-md) {
         margin-left: 32px;
       }
@@ -45,10 +49,6 @@
       }
   }
 }
-
-@import "./../colors";
-@import "./../fonts";
-@import "./../configs";
 
 #menu {
   &__toggle {

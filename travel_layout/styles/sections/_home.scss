@@ -1,6 +1,7 @@
 @import "./../colors";
 @import "./../mixins";
 @import "./../fonts";
+@import "./../configs";
 
 #home {
   background-image: url("./../assets/images/home.svg");
@@ -10,7 +11,7 @@
   &__content-container {
     @include center-top;
     text-align: center;
-    min-height: 740px;
+    min-height: calc(100vh - 80px);
   }
 
   &__title {
@@ -78,10 +79,25 @@
       text-align: center;
       border: none;
       padding: 0 10px;
+      outline: none;
 
       &::placeholder {
         text-transform: capitalize;
       }
     }
+  }
+}
+
+.search-short {
+  display: none;
+}
+
+@media screen and (max-width: $breakpoint-up-xxs){
+  .search-short {
+    display: block;
+  }
+
+  .search-big {
+    display: none;
   }
 }

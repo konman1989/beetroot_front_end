@@ -1,5 +1,6 @@
 @import "colors";
 @import "fonts";
+@import "configs";
 
 .content-container {
   max-width: 1144px;
@@ -26,17 +27,31 @@
   height: 60px;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 26px;
   white-space: nowrap;
   color: $white;
   background-color: $blue;
   font-family: $button-font;
   font-weight: 400;
+  opacity: 0.9;
   transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  outline: none;
+
+  &:hover {
+    opacity: 1;
+
+  }
 
   &--small {
     width: 150px;
     border: 2px solid $white;
+
+    span  {
+      margin-right: 10px;
+      
+      @media screen and (max-width: $breakpoint-up-xxs) {
+        display: none;
+      }
+    }
   }
 }
 
