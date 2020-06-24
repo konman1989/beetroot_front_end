@@ -6,6 +6,11 @@
   max-width: 1144px;
   margin: 0 auto;
   padding: 0 16px;
+
+  @media screen and (max-width: $breakpoint-up-xxs) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
 
 .img-cover {
@@ -40,17 +45,17 @@
     opacity: 1;
   }
 
-  @media screen and (max-width: $breakpoint-up-xxs){
-      width: 100%;
-    }
+  @media screen and (max-width: $breakpoint-up-xxs) {
+    width: 100%;
+  }
 
   &--small {
     width: 150px;
     border: 2px solid $white;
 
-    span  {
+    span {
       margin-right: 10px;
-      
+
       @media screen and (max-width: $breakpoint-up-xxs) {
         display: none;
       }

@@ -12,6 +12,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: $breakpoint-up-xxs) {
+      padding-top: 64px;
+      }
+
     h2 {
       font-size: 36px;
       line-height: 36px;

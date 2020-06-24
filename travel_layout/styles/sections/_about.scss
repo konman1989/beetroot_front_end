@@ -54,6 +54,10 @@
       margin-right: 0;
       text-align: center;
     }
+
+   @media screen and (max-width: $breakpoint-up-xxs) {
+      padding-top: 0;
+    }
   }
 
   &__images {
@@ -66,6 +70,7 @@
     @media screen and (max-width: $breakpoint-up-xs) {
       padding-top: 30px;
     }
+
   }
 
   &__img-wrapper {
@@ -89,6 +94,10 @@
       &:last-child {
         align-self: center;
       }
+    }
+
+    @media screen and (max-width: $breakpoint-up-xxs) {
+      margin-bottom: 0;
     }
   }
 

@@ -17,6 +17,11 @@
     display: flex;
     align-items: center;
     justify-content: $flex-position;
+
+    @media screen and (max-width: $breakpoint-up-xxs){
+      min-height: 500px;
+      padding-top: 64px;
+    }
   }
 
   &__content {
