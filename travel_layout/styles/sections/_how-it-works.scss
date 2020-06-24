@@ -6,13 +6,17 @@
   background-color: $grey-dark;
 
   &__content-container {
-    height: 338px;
+    position: relative;
+    min-height: 338px;
+    display: flex;
+    align-items: center;
   }
 
   &__list {
     display: flex;
     justify-items: center;
     justify-content: center;
+    width: 100%;
     margin: 0 86px;
 
     @media screen and (max-width: $breakpoint-up-sm) {
@@ -59,7 +63,6 @@
     i {
       margin-bottom: 34px;
       font-size: 60px;
-      padding-top: 100px;
 
       @media screen and (max-width: $breakpoint-up-xxs) {
         padding-top: 12px;
@@ -71,13 +74,13 @@
 
   &__dotted-circle {
     position: absolute;
+    top: 60px;
     width: 340px;
-    height: 280px;
+    min-height: 280px;
     border-radius: 100%;
     border: 2px dotted;
     border-color: $grey transparent transparent transparent;
     border-bottom: 0;
-    margin-top: 50px;
 
     @media screen and (max-width: $breakpoint-up-md) {
       width: 250px;
