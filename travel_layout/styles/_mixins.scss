@@ -12,25 +12,21 @@
   background-image: url($url);
 
   &__content-container {
-    height: 700px;
-    padding-top: 228px;
+    min-height: 700px;
+    padding-top: 50px;
     display: flex;
+    align-items: center;
     justify-content: $flex-position;
-
-    @media screen and (max-width: $breakpoint-up-xxs){
-      padding-top: 114px;
-    }
   }
 
   &__content {
     max-width: 540px;
-    height: 370px;
-    width: 100%;
+    min-height: 372px;
     background-color: rgba($grey-transparent, 0.8);
     padding: 50px 32px;
 
-    @media screen and (max-width: $breakpoint-up-xxs){
-      height: 470px;
+    @media screen and (max-width: $breakpoint-up-xs){
+      text-align: center;
     }
   }
 }

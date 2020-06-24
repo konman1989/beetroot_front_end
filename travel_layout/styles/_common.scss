@@ -38,8 +38,11 @@
 
   &:hover {
     opacity: 1;
-
   }
+
+  @media screen and (max-width: $breakpoint-up-xxs){
+      width: 100%;
+    }
 
   &--small {
     width: 150px;
