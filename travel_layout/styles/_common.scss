@@ -33,7 +33,7 @@
   font-family: $button-font;
   font-weight: 400;
   opacity: 0.9;
-  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  transition: 0.2s;
   outline: none;
 
   &:hover {
