@@ -59,17 +59,6 @@
       font-size: 28px;
       margin-bottom: 10px;
     }
-
-    i {
-      margin-bottom: 34px;
-      font-size: 60px;
-
-      @media screen and (max-width: $breakpoint-up-xxs) {
-        padding-top: 12px;
-        font-size: 36px;
-        margin-bottom: 20px;
-      }
-    }
   }
 
   &__dotted-circle {
@@ -89,6 +78,17 @@
     @media screen and (max-width: $breakpoint-up-sm) {
       display: none;
     }
+  }
+
+  &__icon {
+      margin-bottom: 34px;
+      font-size: 60px;
+
+      @media screen and (max-width: $breakpoint-up-xxs) {
+        padding-top: 12px;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
   }
 
   &__icon--red {

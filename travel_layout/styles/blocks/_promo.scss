@@ -2,10 +2,10 @@
 @import "./../fonts";
 @import "./../mixins";
 
-.promo-1 {
+.promo-left {
   @include promo-section("./../assets/images/promo-1.svg", flex-start)
 }
 
-.promo-2 {
+.promo-right {
   @include promo-section("./../assets/images/promo-2.svg", flex-end)
 }
