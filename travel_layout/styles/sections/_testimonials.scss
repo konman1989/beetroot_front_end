@@ -6,12 +6,15 @@
   background-image: url("./../assets/images/testimonials-main.svg");
 
   &__content-container {
-    height: 732px;
+    min-height: 732px;
     padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
       font-size: 36px;
-      line-height: 26px;
+      line-height: 36px;
       color: $white;
       font-family: $button-font;
       font-weight: 400;
@@ -23,30 +26,35 @@
         line-height: 48px;
         margin-bottom: 46px;
       }
+
+      @media screen and (max-width: $breakpoint-up-xxs) {
+        max-width: 80%;
+        text-align: center;
+      }
     }
   }
 
   &__content {
     display: flex;
+    background-color: $grey-dark;
+    align-items: center;
 
-    @media screen and (max-width: $breakpoint-up-md) {
-        justify-content: center;
+    @media screen and (max-width: $breakpoint-up-sm) {
+      flex-direction: column;
+      padding-top: 10px;
+      }
+    @media screen and (max-width: $breakpoint-up-xxs) {
+      padding-top: 0;
       }
   }
 
   &__img-wrapper {
     max-width: 445px;
-    min-width: 445px;
-
-    @media screen and (max-width: $breakpoint-up-md) {
-        display: none;
-      }
   }
 
   &__text-wrapper {
-    background-color: $grey-dark;
     max-width: 656px;
-    max-height: 284px;
+    min-height: 284px;
     padding: 46px 50px;
 
     @media screen and (max-width: $breakpoint-up-lg) {
